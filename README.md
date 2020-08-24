@@ -12,10 +12,6 @@
 
 An interactive web app designed to help individuals interested in cycling figure out what type of bike is the right fit for their intended use.
 
-## User Story
-
-As a beginning cyclist I want a bike selecting device so that i don't get the wrong bike for my intended riding.
-
 ## Solution
 
 Our app will provide users with a tiered interactive menu that will reducibly lead them to the correct bicycle for their riding intentions.
