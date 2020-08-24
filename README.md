@@ -2,10 +2,10 @@
 
 ## Authors
 
-- Lee Thomas
+- Brock-Lee Thomas
 - Rolando Haynes
 - Dominique Augurson
-- Spencer Lazzar
+- Major "Spencer" Lazzar
 - Taylor Johnson
 
 ## Description

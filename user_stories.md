@@ -2,7 +2,7 @@
 
 # Bike Terrain
 
-## As a new cyclist I want a bike selecting device so that I don't get the wrong bike for my intended riding
+## As a new cyclist, I want a bike selecting device, so that I don't get the wrong bike for my intended riding.
 
 ### Feature Tasks
 
@@ -18,7 +18,7 @@
 
 # Bike Budget
 
-## As a new cyclist I want to know what kind of bike I can get at my budget
+## As a new cyclist, I want to know what kind of bike I can get at my budget.
 
 ### Feature Tasks
 
