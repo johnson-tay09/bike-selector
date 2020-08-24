@@ -39,6 +39,11 @@ Within your code, document with meaningful comments. For example, a comment migh
 
 Comments should be updated as necessary. Remove all unused, commented-out code before committing to GitHub.
 
+## Domain Modeling
+
+### Domain Diagram
+![Domain](img/domain.png)
+
 ## WireFrame
 
 ### Landing Page
