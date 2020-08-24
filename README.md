@@ -41,8 +41,21 @@ Comments should be updated as necessary. Remove all unused, commented-out code b
 
 ## WireFrame
 
+### Landing Page
 ![Landing Page](img/LandingPage.PNG)
+<br>
+
+### Test Page
 ![Test](img/Test.PNG)
+<br>
+
+### Results Page
 ![Results](img/Results.PNG)
+<br>
+
+### Data Page
 ![Data](img/Data.PNG)
+<br>
+
+### About Us Page
 ![About Us](img/AboutUs.PNG)
