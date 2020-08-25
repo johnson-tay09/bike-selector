@@ -1,8 +1,8 @@
 # User Stories
 
-# Bike Terrain
+## Bike Terrain
 
-## As a new cyclist, I want a bike selecting device, so that I don't get the wrong bike for my intended riding.
+## As a new cyclist, I want a bike selecting device, so that I don't get the wrong bike for my intended riding
 
 ### Feature Tasks
 
@@ -16,9 +16,9 @@
 - Ensure the terrain selection links lead to sub-categories
 - Ensure user is presented with the correct bike based on their selection
 
-# Bike Budget
+## Bike Budget
 
-## As a new cyclist, I want to know what kind of bike I can get at my budget.
+## As a new cyclist, I want to know what kind of bike I can get at my budget
 
 ### Feature Tasks
 
@@ -31,7 +31,7 @@
 - Ensure budget selection menu links to the correct information
 - Ensure user is presented with budget based information at the end of the selection process
 
-# Bike Size
+## Bike Size
 
 ## As a new cyclist I want to know what size of bike to buy at my height
 
@@ -46,9 +46,9 @@
 - Ensure height selection menu links to the correct information
 - Ensure user is presented with size based on their previous selection
 
-# Store Locator 
+## Store Locator 
 
-## As a new cyclist I want to now where to find the right bike for me 
+## As a new cyclist I want to now where to find the right bike for me
 
 ### Feature Tasks
 
@@ -60,7 +60,7 @@
 - Ensure the manufacturers shown make the bike
 - Ensure links function as intended
 
-# Production Data
+## Production Data
 
 ## As a bike manufacturer I want to know what bike new riders are most interested in so that I can properly plan production
 
