@@ -1,12 +1,39 @@
-#page{
-  max-width: 1000px;
-  min-width: 700px;
-  margin: 10px auto 10px auto;
-  padding: 20px;
-  border: 4px double #000;
-  background-color:#E6F9AF;  
+.page{
+  display: flex;
+  width: 970px;
+
 }
-img{
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+
+/* img{
   width: 300px;
   height: 300px;
   border: 2px dashed #8BBEB2;
@@ -14,11 +41,11 @@ img{
   margin-left:20px;
   
   /* flex-direction: row; */
-}
-.products:hover, .img{
+/* } */
+/* .products:hover, .img{
   opacity:1;
-}
-.products{
+} */
+/* .products{
   width: 100%;
   display: flex;
   align-content: space-between;
@@ -49,4 +76,4 @@ ul{
 }
 li{
   margin-bottom:10px;
-}
+}  */
