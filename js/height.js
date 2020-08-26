@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 'use strict'
+=======
+'use strict';
+
+>>>>>>> 35eef91ffc9a6361f8f9050d3a53d27550aedcdc
 var sizeSmall = document.getElementById('small');
 var sizeMedium = document.getElementById('medium');
 var sizeLarge = document.getElementById('large');
 var link = document.getElementById('link');
 
+<<<<<<< HEAD
 var yourBike = {}
+=======
+var yourBike = {};
+>>>>>>> 35eef91ffc9a6361f8f9050d3a53d27550aedcdc
 
 function getStoredBike() {
   var parsedBike = JSON.parse(localStorage.getItem('bike'));
@@ -36,7 +45,10 @@ function mediumClick(event) {
 }
 
 function largeClick(event) {
-  yourBike.size = 'Large';
+<<<<<<< HEAD
+=======
+  event.preventDefault();
+>>>>>>> 35eef91ffc9a6361f8f9050d3a53d27550aedcdc
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem('bike', stringBike);

@@ -7,61 +7,61 @@ var link = document.getElementById('link');
 
 var yourBike = {}
 function getStoredBike() {
-    //parse back to js from JSON
-    var parsedBike = JSON.parse(localStorage.getItem('bike'));
-    //make product array = stored data to keep running total.
-    yourBike = parsedBike;
-} 
-  
-function lowBudgetClick(event){
-    event.preventDefault();
-   yourBike.budget= '$500-$1000';
-   yourBike.trim = "low trim lorem ipsum";
-   var stringBike = JSON.stringify(yourBike);
-   //store products in products label
-   localStorage.clear();
-   localStorage.setItem('bike', stringBike);
-   var linkElement = document.createElement('a');
-   linkElement.setAttribute('href', "../pages/yourbike.html");
-   linkElement.textContent = "Next";
-   link.appendChild(linkElement);
-  }
-   
-    // wait for a click then run the callback function
-  lowBudget.addEventListener('click', lowBudgetClick);
+  //parse back to js from JSON
+  var parsedBike = JSON.parse(localStorage.getItem('bike'));
+  //make product array = stored data to keep running total.
+  yourBike = parsedBike;
+}
 
-  function mediumBudgetClick(event){
-    event.preventDefault();
-   yourBike.budget= '$1000-$2000';
-   yourBike.trim = "medium trim lorem ipsum";
-   var stringBike = JSON.stringify(yourBike);
-   //store products in products label
-   localStorage.clear();
-   localStorage.setItem('bike', stringBike);
-   var linkElement = document.createElement('a');
-   linkElement.setAttribute('href', "../pages/yourbike.html");
-   linkElement.textContent = "Next";
-   link.appendChild(linkElement);
-  }
-   
-    // wait for a click then run the callback function
-  mediumBudget.addEventListener('click', mediumBudgetClick);
+function lowBudgetClick(event) {
+  event.preventDefault();
+  yourBike.budget = '$500-$1000';
+  yourBike.trim = "low trim lorem ipsum";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem('bike', stringBike);
+  var linkElement = document.createElement('a');
+  linkElement.setAttribute('href', "../pages/yourbike.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
+}
 
-  function highBudgetClick(event){
-    event.preventDefault();
-   yourBike.budget= '$3000-Beyond';
-   yourBike.trim = "high trim lorem ipsum";
-   var stringBike = JSON.stringify(yourBike);
-   //store products in products label
-   localStorage.clear();
-   localStorage.setItem('bike', stringBike);
-   var linkElement = document.createElement('a');
-   linkElement.setAttribute('href', "../pages/yourbike.html");
-   linkElement.textContent = "Next";
-   link.appendChild(linkElement);
-  }
-   
-    // wait for a click then run the callback function
-  highBudget.addEventListener('click', highBudgetClick);
+// wait for a click then run the callback function
+lowBudget.addEventListener('click', lowBudgetClick);
 
-  getStoredBike();
+function mediumBudgetClick(event) {
+  event.preventDefault();
+  yourBike.budget = '$1000-$2000';
+  yourBike.trim = "medium trim lorem ipsum";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem('bike', stringBike);
+  var linkElement = document.createElement('a');
+  linkElement.setAttribute('href', "../pages/yourbike.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
+}
+
+// wait for a click then run the callback function
+mediumBudget.addEventListener('click', mediumBudgetClick);
+
+function highBudgetClick(event) {
+  event.preventDefault();
+  yourBike.budget = '$3000-Beyond';
+  yourBike.trim = "high trim lorem ipsum";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem('bike', stringBike);
+  var linkElement = document.createElement('a');
+  linkElement.setAttribute('href', "../pages/yourbike.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
+}
+
+// wait for a click then run the callback function
+highBudget.addEventListener('click', highBudgetClick);
+
+getStoredBike();

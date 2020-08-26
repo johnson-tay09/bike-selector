@@ -10,9 +10,9 @@ var yourBike = {}
 function getStoredBike() {
   var parsedBike = JSON.parse(localStorage.getItem('bike'));
   yourBike = parsedBike;
-} 
-  
-function cruiserClick(event){
+}
+
+function cruiserClick(event) {
   event.preventDefault();
   yourBike.option = 'cruiser.jpg';
   yourBike.description = "cruiser lorem ipsum "
@@ -25,7 +25,7 @@ function cruiserClick(event){
   link.appendChild(linkElement);
 }
 
-function commuterClick(event){
+function commuterClick(event) {
   event.preventDefault();
   yourBike.option = 'commuter.jpg';
   yourBike.description = "commuter lorem ipsum "
@@ -38,10 +38,10 @@ function commuterClick(event){
   link.appendChild(linkElement);
 }
 
-function hybridClick(event){
+function hybridClick(event) {
   event.preventDefault();
   yourBike.option = 'hybrid.jpg';
-  yourBike.description = "hybrid lorem ipsum "
+  yourBike.description = "hybrid lorem ipsum ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem('bike', stringBike);

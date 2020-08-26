@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 'use strict'
+=======
+'use strict';
+
+>>>>>>> 35eef91ffc9a6361f8f9050d3a53d27550aedcdc
 var downhill = document.getElementById('downhill');
 var enduro = document.getElementById('enduro');
 var crossCountry = document.getElementById('crosscountry');
@@ -9,12 +14,12 @@ var yourBike = {}
 function getStoredBike() {
   var parsedBike = JSON.parse(localStorage.getItem('bike'));
   yourBike = parsedBike;
-} 
-  
-function downhillClick(event){
+}
+
+function downhillClick(event) {
   event.preventDefault();
   yourBike.option = 'dhbike.jpg';
-  yourBike.description = "downhill lorem ipsum "
+  yourBike.description = "downhill lorem ipsum ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem('bike', stringBike);
@@ -23,11 +28,12 @@ function downhillClick(event){
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
 }
+downhill.addEventListener('click', downhillClick);
 
-function enduroClick(event){
+function enduroClick(event) {
   event.preventDefault();
   yourBike.option = 'enduro.jpg';
-  yourBike.description = "enduro lorem ipsum "
+  yourBike.description = "enduro lorem ipsum ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem('bike', stringBike);
@@ -36,11 +42,12 @@ function enduroClick(event){
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
 }
+enduro.addEventListener('click', enduroClick);
 
-function crossCountryClick(event){
+function crossCountryClick(event) {
   event.preventDefault();
   yourBike.option = 'xcmtb.jpg';
-  yourBike.description = "cross country lorem ipsum "
+  yourBike.description = "cross country lorem ipsum ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem('bike', stringBike);
@@ -49,8 +56,9 @@ function crossCountryClick(event){
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
 }
+crossCountry.addEventListener('click', crossCountryClick);
 
 getStoredBike();
-downhill.addEventListener('click', downhillClick);
-enduro.addEventListener('click', enduroClick);
-crossCountry.addEventListener('click', crossCountryClick);
+
+
+
