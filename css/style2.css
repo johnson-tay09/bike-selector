@@ -1,70 +1,210 @@
 
+.container{
+  background-color: #3B3E09;
+  border: 1px solid black;
+  height: 1000px;
+  
+}
 .header {
   border: 1px solid black;
-  background-color: #F1F1F1;
+  background-color: #938E3F;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+.topnav{
+  border: 1px solid black; 
+  height: 50px;
   text-align: center;
   padding: 20px;
 }
 
-/* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: #464D77;
+.middle{
+  height: 785px;
+  background-image: url(../img/Pacific_Crest_Trail_Mount_Rainier.jpg);
+  background-size: cover;
 }
 
-/* Navbar links */
-.topnav a {
-  float: left;
+.surveyBtn{
+  width: 400px;
+  height: 200px;
+  font-size: 26px;
+  margin-left: 750px;
+  margin-top: 25px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+li {
+  float: center;
+  display: inline;
+  text-align: center;
+  margin-left: 80px;
+}
+
+li a {
   display: block;
-  color: #F4EDED;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Links - change color on hover */
-.topnav a:hover {
+
+.HomeButton{
+  
+  display: inline-block;
+  margin-right: 100px;
+}
+.DataButton{
+  display: inline-block;
+  margin-right: 100px;
+}
+.AboutButton{
+  display: inline-block;
+  margin-right: 100px;
+  
+  
+  
+  
+}
+
+
+.pictures{
+  height: 200px;
+  display: inline-block;
+  padding: 50px;
+}
+
+.moutain{
+  opacity: 0.75;
+  border: 1px solid black;
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  background-image: url(../img/Mountain\ Bike.jpg);
+  background-size: cover;
+  padding: 50px;
+  margin: 40px;
+  
+
+}
+
+.moutain:hover {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+a:hover{
+  background-color: #938E3F;
+}
+
+
+.road{
+  opacity: 0.75;
+  border: 1px solid black;
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  background-image: url(../img/Road\ Bike.jpg);
+  background-size: cover;
+  padding: 50px;
+  margin: 40px;
+}
+
+.road:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.comfort{
+  opacity: 0.75;
+  border: 1px solid black;
+  display: inline-block;  
+  width: 400px;
+  height: 300px;
+  background-image: url(../img/Commuter\ Bike.jpg);
+  background-size: cover;
+  padding: 50px;
+  margin: 40px;
+} 
+.comfort:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.firstImgText{
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 250px;
+  margin-left: 150px;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+}
+
+.secondImgText{
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 250px;
+  margin-left: 175px;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+}
+
+.thirdImgText{
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 250px;
+  margin-left: 175px;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+}
+
+
+h2 {
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 1px 2px #326BA0;
+  
+}
+
+.ImgText {
+  text-shadow: 1px 1px 2px #938E3F;
+}
+
+.yourBikePic{
+  text-align: center;
+  padding: 75px;
+}
+
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #3F4849;
-  color: black;
+  color: white;
+  text-align: center;
 }
+</style>
 
+<div class="footer">
+  <p>Footer</p>
+</div>
 
-
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    /* width: 33.33%; */
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FFnU06etzmPw%2Fmaxresdefault.jpg&f=1&nofb=1);
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    
-  }
-
-.row {
-  height: 440px;
-
-}
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-
-
-
-
-
-  .footer {
-    background-color: #36827F;
-    text-align: center;
-    padding: 10px;
-  }
