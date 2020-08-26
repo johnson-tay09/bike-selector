@@ -39,6 +39,15 @@ function enduroClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("enduroOption");
+  //delete child image
+  enduro.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/enduro-option.jpg");
+  newImage.setAttribute("alt", "../img/bike-option/bnwenduro-option.jpg");
+  enduro.appendChild(newImage);
 }
 enduro.addEventListener("click", enduroClick);
 
