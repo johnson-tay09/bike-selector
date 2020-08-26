@@ -1,72 +1,65 @@
-'use strict'
+"use strict";
 // parent element for images
-var imageContainer = document.getElementById('bike-container');
+var imageContainer = document.getElementById("bike-container");
 //parent element for data
-var dataContainer = document.getElementById('data-container');
-var mountain= document.getElementById('mountain');
-var road= document.getElementById('road');
-var comfort= document.getElementById('comfort');
-var link = document.getElementById('link');
+var dataContainer = document.getElementById("data-container");
+var mountain = document.getElementById("mountain");
+var road = document.getElementById("road");
+var comfort = document.getElementById("comfort");
+var link = document.getElementById("link");
 // array to store bike objects
 var bikeArray = [];
 //bike object
-var yourBike = {
+var yourBike = {};
 
-}
-
-
- 
 //  callback function for our event listener s
-function mountainClick(event){
+function mountainClick(event) {
   event.preventDefault();
- yourBike.terrain = 'mountain';
- var stringBike = JSON.stringify(yourBike);
- //store products in products label
- localStorage.clear();
- localStorage.setItem('bike', stringBike);
- var linkElement = document.createElement('a');
- linkElement.setAttribute('href', "pages/mountain.html");
- linkElement.textContent = "Next";
- link.appendChild(linkElement);
+  yourBike.terrain = "mountain";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem("bike", stringBike);
+  var linkElement = document.createElement("a");
+  linkElement.setAttribute("href", "pages/mountain.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
 }
- 
-  // wait for a click then run the callback function
-mountain.addEventListener('click', mountainClick);
 
-function roadClick(event){
+// wait for a click then run the callback function
+mountain.addEventListener("click", mountainClick);
+
+function roadClick(event) {
   event.preventDefault();
- yourBike.terrain = 'road';
- var stringBike = JSON.stringify(yourBike);
- //store products in products label
- localStorage.clear();
- localStorage.setItem('bike', stringBike);
- var linkElement = document.createElement('a');
- linkElement.setAttribute('href', "pages/road.html");
- linkElement.textContent = "Next";
- link.appendChild(linkElement);
+  yourBike.terrain = "road";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem("bike", stringBike);
+  var linkElement = document.createElement("a");
+  linkElement.setAttribute("href", "pages/road.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
 }
- 
-  // wait for a click then run the callback function
-road.addEventListener('click', roadClick);
 
-function comfortClick(event){
+// wait for a click then run the callback function
+road.addEventListener("click", roadClick);
+
+function comfortClick(event) {
   event.preventDefault();
- yourBike.terrain = 'comfort';
- var stringBike = JSON.stringify(yourBike);
- //store products in products label
- localStorage.clear();
- localStorage.setItem('bike', stringBike);
- var linkElement = document.createElement('a');
- linkElement.setAttribute('href', "pages/comfort.html");
- linkElement.textContent = "Next";
- link.appendChild(linkElement);
- 
+  yourBike.terrain = "comfort";
+  var stringBike = JSON.stringify(yourBike);
+  //store products in products label
+  localStorage.clear();
+  localStorage.setItem("bike", stringBike);
+  var linkElement = document.createElement("a");
+  linkElement.setAttribute("href", "pages/comfort.html");
+  linkElement.textContent = "Next";
+  link.appendChild(linkElement);
 }
- 
-  // wait for a click then run the callback function
-comfort.addEventListener('click', comfortClick);
 
-
+// wait for a click then run the callback function
+comfort.addEventListener("click", comfortClick);
 
 //listen for click on image & change image to show selected
 
@@ -87,5 +80,3 @@ comfort.addEventListener('click', comfortClick);
 //show text with bike size based on height
 
 //show text of features based on budget
-
- 
