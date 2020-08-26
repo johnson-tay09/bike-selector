@@ -1,27 +1,77 @@
-## User Stories:
-- As a retailer I want to know what products will sell so that I don't waste money on production.
-- As a user, I would like to display three unique products by chance so that the viewers can pick a favorite.
-- As a user, I would like to control the number of rounds a user is presented with so that I can control the voting session duration.
-- As a user, I would like to know what is voted for most and how ofen a shown item is voted for so I can understand what my customers want.
-## Feature tasks:
+# User Stories
 
-### Create a constructor function that creates an object associated with each product, and has the following properties:
-- Name of the product
-- File path of image
-- Create an algorithm that will randomly generate three unique product images from the images directory and display them side-by-side-by-side in the browser window.
+## Bike Terrain
 
-### Attach an event listener to the section of the HTML page where the images are going to be displayed.
+## As a new cyclist, I want a bike selecting device, so that I don't get the wrong bike for my intended riding
 
-- Once the users ‘clicks’ a product, generate three new products for the user to pick from.
-- As a user, I would like to track the selections made by viewers so that I can determine which products to keep for the catalog.
-- In the constructor function define a property to hold the number of times a product has been clicked.
+### Feature Tasks
 
-### After every selection by the viewer, update the newly added property to reflect if it was clicked.
-- By default, the user should be presented with 25 rounds of voting before ending the session.
-- Keep the number of rounds in a variable to allow the number to be easily changed for debugging and testing purposes.
-- As a user, I would like to view a report of results after all rounds of voting have concluded so that I can evaluate which products were the most popular.
-- Create a property attached to the constructor function itself that keeps track of all the products that are currently being considered.
+- Show user options for different riding terrain
+- User can choose from selection criteria for riding purpose: road, mountain, park
+- User can select from riding terrain sub-categories 
+- Present user with appropriate bike based on their selections
 
-### After voting rounds have been completed, remove the event listeners on the product.
+### Acceptance Tests
 
-- Display the list of all the products followed by the votes received and number of times seen for each. Example: Banana Slicer had 3 votes and was shown 5 times
+- Ensure the terrain selection links lead to sub-categories
+- Ensure user is presented with the correct bike based on their selection
+
+## Bike Budget
+
+## As a new cyclist, I want to know what kind of bike I can get at my budget
+
+### Feature Tasks
+
+- Show selection icons for different budgets
+- User can select their own budget or one they are curious about
+- User will be presented with information on bike trim level assigned to their selected budget
+
+### Acceptance Tests
+
+- Ensure budget selection menu links to the correct information
+- Ensure user is presented with budget based information at the end of the selection process
+
+## Bike Size
+
+## As a new cyclist I want to know what size of bike to buy at my height
+
+### Feature Tasks
+
+- Show user selection icon for different rider height ranges
+- User selects their height range
+- User will be presented with the correct bike size based on their height at the end of the selection process
+
+### Acceptance Tests
+
+- Ensure height selection menu links to the correct information
+- Ensure user is presented with size based on their previous selection
+
+## Store Locator 
+
+## As a new cyclist I want to now where to find the right bike for me
+
+### Feature Tasks
+
+- Show the user a ist of manufacturers that make the type of bike they selected
+- Provide a link to the 'store locater' section of the manufacturers page
+
+### Acceptance Tests
+
+- Ensure the manufacturers shown make the bike
+- Ensure links function as intended
+
+## Production Data
+
+## As a bike manufacturer I want to know what bike new riders are most interested in so that I can properly plan production
+
+### Feature Tasks
+
+- Collect data from users as they navigate the website (terrain, budget, height)
+- Store user selection data 
+- Generate a graph based on user data
+
+### Acceptance Tests
+
+- Ensure data is being collected
+- Ensure data is being stored
+- Ensure graph is rendering accurately 
