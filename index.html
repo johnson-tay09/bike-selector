@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <title>Bike Selector App</title>
-    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <div id="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Selector App</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/style2.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <header>
-      <div class="nav">
-        <h1>The Bike Selector</h1>
-        <nav><a href="index.html">Home</a> | <a href="data.html">Data</a> |</nav>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bike Selector</h1>
+    </div>
+    <div class="topnav">
+      <ul>
+        <li><button><a href="index.html">Home</a></button></li>
+        <li><button><a href="data.html">Data</a></button></li>
+        <li><button><a href="aboutus.html">About Us</a></button></li>
+        <li><button><a href="yourbike.html">Your Bike</a></button></li>
+      </ul>
+    </div>
+    <div class="pictures">
+      <div id="mountain">
+        <img id="homeMountain" class="imageHomePage" src="img/Mountain Bike.jpg" alt="">
       </div>
-    </header>
-    <main>
-
-      <h2>Need help finding the right bike for you? Follow our prompts below to meet the bike of your dreams!</h2>
-      <section id="mountain">
-        <img src="img/bikes/dhbike.jpg" alt="mountain"/>
-      </section>  
-      <section id="road">
-        <img src="img/bikes/roadRace.jpg" alt="road"/>
-      </section>  
-      <section id="comfort">
-        <img src="img/bikes/cruiser.jpg" alt="comfort"/>
-      </section> 
-      <section id="link"></section> 
-
-      <!-- <h2><a href="pages/mountain.html" >Mountain</a></h2> 
-      <h2><a href="pages/road.html" id="road">Road</a></h2>
-      <h2><a href="pages/comfort.html" id="comfort">Comfort</a></h2> -->
-
-    </main>
+      <div id="road">
+        <img class="imageHomePage" src="img/Road Bike.jpg" alt="">
+      </div>
+      <div id="comfort">
+        <img class="imageHomePage" src="img/Commuter Bike.jpg" alt="">
+      </div>
+    </div>
+    <section id="link"></section>
     <footer></footer>
     <script src="js/app.js"></script>
   </div>
