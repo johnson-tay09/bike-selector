@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Selector App</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style2.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bike Selector App</title>
-  <link href="css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="css/style2.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Bike Selector</h1>
-    </div>
-    <div class="topnav">
-      <ul>
-        <li><button><a href="index.html">Home</a></button></li>
-        <li><button><a href="data.html">Data</a></button></li>
-        <li><button><a href="aboutus.html">About Us</a></button></li>
-        <li><button><a href="yourbike.html">Your Bike</a></button></li>
-      </ul>
-    </div>
-    <div class="pictures">
-      <div id="mountain">
-        <img id="homeMountain" class="imageHomePage" src="img/Mountain Bike.jpg" alt="">
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Bike Selector</h1>
       </div>
-      <div id="road">
-        <img class="imageHomePage" src="img/Road Bike.jpg" alt="">
+      <div class="topnav">
+        <ul>
+          <li>
+            <button><a href="index.html">Home</a></button>
+          </li>
+          <li>
+            <button><a href="data.html">Data</a></button>
+          </li>
+          <li>
+            <button><a href="aboutus.html">About Us</a></button>
+          </li>
+          <li>
+            <button><a href="yourbike.html">Your Bike</a></button>
+          </li>
+        </ul>
       </div>
-      <div id="comfort">
-        <img class="imageHomePage" src="img/Commuter Bike.jpg" alt="">
+      <div class="pictures">
+        <div id="mountain">
+          <img
+            id="homeMountain"
+            class="imageHomePage"
+            src="img/Mountain Bike.jpg"
+            alt=""
+          />
+        </div>
+        <div id="road">
+          <img
+            id="homeRoad"
+            class="imageHomePage"
+            src="img/Road Bike.jpg"
+            alt=""
+          />
+        </div>
+        <div id="comfort">
+          <img
+            id="homeComfort"
+            class="imageHomePage"
+            src="img/Commuter Bike.jpg"
+            alt=""
+          />
+        </div>
       </div>
+      <section id="link"></section>
+      <footer></footer>
+      <script src="js/app.js"></script>
     </div>
-    <section id="link"></section>
-    <footer></footer>
-    <script src="js/app.js"></script>
-  </div>
-</body>
-
+  </body>
 </html>

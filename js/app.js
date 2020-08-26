@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // parent element for images
 var imageContainer = document.getElementById("bike-container");
@@ -21,6 +21,7 @@ function mountainClick(event) {
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
   var linkElement = document.createElement("a");
+  linkElement.setAttribute("class", "nextLink");
   linkElement.setAttribute("href", "pages/mountain.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
@@ -33,8 +34,6 @@ function mountainClick(event) {
   newImage.setAttribute("src", "img/bikes/roadRace.jpg");
   newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
   mountain.appendChild(newImage);
-
-
 }
 // wait for a click then run the callback function
 mountain.addEventListener("click", mountainClick);
@@ -47,9 +46,19 @@ function roadClick(event) {
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
   var linkElement = document.createElement("a");
+  linkElement.setAttribute("class", "nextLink");
   linkElement.setAttribute("href", "pages/road.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("homeRoad");
+  //delete child image
+  road.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "img/bikes/roadRace.jpg");
+  newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
+  road.appendChild(newImage);
 }
 // wait for a click then run the callback function
 road.addEventListener("click", roadClick);
@@ -61,9 +70,19 @@ function comfortClick(event) {
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
   var linkElement = document.createElement("a");
+  linkElement.setAttribute("class", "nextLink");
   linkElement.setAttribute("href", "pages/comfort.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("homeComfort");
+  //delete child image
+  comfort.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "img/bikes/roadRace.jpg");
+  newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
+  comfort.appendChild(newImage);
 }
 // wait for a click then run the callback function
 comfort.addEventListener("click", comfortClick);
@@ -77,4 +96,3 @@ comfort.addEventListener("click", comfortClick);
 //show text with bike uses based on option
 //show text with bike size based on height
 //show text of features based on budget
-
