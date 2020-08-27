@@ -84,10 +84,6 @@ li a {
   justify-content: space-between;
 }
 
-#link {
-  margin-top: 100px;
-}
-
 .imageHomePage {
   width: 400px;
   height: 300px;
@@ -172,12 +168,16 @@ h2 {
 #link {
   /* display: relative; */
   margin-left: 50%;
-  margin-top: 10%;
+  margin-top: 20%;
+  margin-bottom: 40%;
 }
+
+
+
 .nextLink {
   font-size: x-large;
   border-radius: 4px;
-  padding: 4px;
+  padding: 25px;
   text-decoration: none;
   border: 1px solid #326ba0;
   background-color: white;
