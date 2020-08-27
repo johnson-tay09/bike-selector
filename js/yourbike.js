@@ -11,11 +11,15 @@ function getStoredBike() {
   yourBike = parsedBike;
 }
 function renderImage() {
+  var imageTitle = document.createElement("h2");
+  //set text content for h2
+  imageTitle.textContent = yourBike.title;
   var imageElement = document.createElement("img");
   //set the attributes of the image
   imageElement.setAttribute("src", `../img/bikes/${yourBike.option}`);
   imageElement.setAttribute("alt", yourBike.option);
   //append to parent
+  yourImage.appendChild(imageTitle);
   yourImage.appendChild(imageElement);
 }
 function renderContent() {
