@@ -91,7 +91,7 @@ li a {
 }
 
 .pictures {
-  height: 200px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   padding: 50px;
@@ -186,7 +186,38 @@ h2 {
   margin-bottom: 40%;
 }
 
+#nameForm{
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+#name{
+  background-color:  #326ba0; 
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
+#goal{
+  background-color:  #326ba0;;
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+#submitButton{
+  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+}
 
 .nextLink {
   font-size: x-large;
