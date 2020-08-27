@@ -31,8 +31,8 @@ function mountainClick(event) {
   mountain.removeChild(imageElement);
   //create replacement image
   var newImage = document.createElement("img");
-  newImage.setAttribute("src", "img/bikes/roadRace.jpg");
-  newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
+  newImage.setAttribute("src", "img/Mountain Bike.jpg");
+  newImage.setAttribute("alt", "Mountain Biking");
   mountain.appendChild(newImage);
 }
 // wait for a click then run the callback function
@@ -56,8 +56,8 @@ function roadClick(event) {
   road.removeChild(imageElement);
   //create replacement image
   var newImage = document.createElement("img");
-  newImage.setAttribute("src", "img/bikes/roadRace.jpg");
-  newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
+  newImage.setAttribute("src", "img/Road Bike.jpg");
+  newImage.setAttribute("alt", "Road Biking");
   road.appendChild(newImage);
 }
 // wait for a click then run the callback function
@@ -80,19 +80,9 @@ function comfortClick(event) {
   comfort.removeChild(imageElement);
   //create replacement image
   var newImage = document.createElement("img");
-  newImage.setAttribute("src", "img/bikes/roadRace.jpg");
-  newImage.setAttribute("alt", "img/bikes/roadRace.jpg");
+  newImage.setAttribute("src", "img/Commuter-Bike.jpg");
+  newImage.setAttribute("alt", "Comfort Biking");
   comfort.appendChild(newImage);
 }
 // wait for a click then run the callback function
 comfort.addEventListener("click", comfortClick);
-//listen for click on image & change image to show selected
-//callback function render link to next page and send selection to object
-//create a function that listens for the user to select a terrain/option/size/budget
-//create callback function that adds selection to the bike object
-//store bike object in local storage
-//pull bike object from local storage and render outputs
-//show image of correct bike based on option
-//show text with bike uses based on option
-//show text with bike size based on height
-//show text of features based on budget
