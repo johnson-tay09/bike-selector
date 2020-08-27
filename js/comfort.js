@@ -26,6 +26,17 @@ function cruiserClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("cruiserOption");
+  //delete child image
+  cruiser.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/cruiser-option.jpg");
+  newImage.setAttribute("alt", "cruiser bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
+  cruiser.appendChild(newImage);
 }
 
 function commuterClick(event) {
@@ -42,6 +53,17 @@ function commuterClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("commuterOption");
+  //delete child image
+  commuter.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/commuter-option.jpg");
+  newImage.setAttribute("alt", "commuter bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
+  commuter.appendChild(newImage);
 }
 
 function hybridClick(event) {
@@ -58,6 +80,17 @@ function hybridClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("hybridOption");
+  //delete child image
+  hybrid.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/hybrid-option.jpg");
+  newImage.setAttribute("alt", "hybrid bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
+  hybrid.appendChild(newImage);
 }
 
 getStoredBike();

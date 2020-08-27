@@ -33,6 +33,8 @@ function mountainClick(event) {
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "img/Mountain Bike.jpg");
   newImage.setAttribute("alt", "Mountain Biking");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   mountain.appendChild(newImage);
 }
 // wait for a click then run the callback function
@@ -58,6 +60,8 @@ function roadClick(event) {
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "img/Road Bike.jpg");
   newImage.setAttribute("alt", "Road Biking");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   road.appendChild(newImage);
 }
 // wait for a click then run the callback function
@@ -82,6 +86,8 @@ function comfortClick(event) {
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "img/Commuter-Bike.jpg");
   newImage.setAttribute("alt", "Comfort Biking");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   comfort.appendChild(newImage);
 }
 // wait for a click then run the callback function
