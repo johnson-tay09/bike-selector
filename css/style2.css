@@ -4,11 +4,16 @@
   height: 1000px;
 }
 .header {
+  font-family: "Luckiest Guy";
   border: 1px solid black;
   background-color: #938e3f;
   text-align: center;
   padding: 10px;
-  font-size: 25px;
+  font-size: 35px;
+  color: #326ba0;
+}
+h1 {
+  font-family: "Luckiest Guy";
 }
 .topnav {
   border: 1px solid black;
@@ -167,13 +172,14 @@ h2 {
 #link {
   /* display: relative; */
   margin-left: 50%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .nextLink {
+  font-size: x-large;
   border-radius: 4px;
   padding: 4px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid #326ba0;
   background-color: white;
 }
 h2 {
@@ -190,3 +196,18 @@ p {
   margin-left: 20%;
   margin-right: 20%;
 }
+a:visited {
+  color: rgb(0, 0, 0);
+}
+h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: x-large;
+}
+/* a {
+  width: 400px;
+  height: 300px;
+} */

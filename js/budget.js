@@ -33,7 +33,9 @@ function lowBudgetClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/height-budget/low-budget.jpg");
-  newImage.setAttribute("alt", "../img/height-budget/low-budget.jpg");
+  newImage.setAttribute("alt", "low budget");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   lowBudget.appendChild(newImage);
 }
 
@@ -60,7 +62,9 @@ function mediumBudgetClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/height-budget/medium-budget.jpg");
-  newImage.setAttribute("alt", "../img/height-budget/medium-budget.jpg");
+  newImage.setAttribute("alt", "medium budget");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   mediumBudget.appendChild(newImage);
 }
 
@@ -87,7 +91,9 @@ function highBudgetClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/height-budget/high-budget.jpg");
-  newImage.setAttribute("alt", "../img/height-budget/high-budget.jpg");
+  newImage.setAttribute("alt", "high budget");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   highBudget.appendChild(newImage);
 }
 

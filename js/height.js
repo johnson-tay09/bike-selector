@@ -11,7 +11,6 @@ function getStoredBike() {
   var parsedBike = JSON.parse(localStorage.getItem("bike"));
   yourBike = parsedBike;
 }
-
 function smallClick(event) {
   event.preventDefault();
   yourBike.size = "Small";

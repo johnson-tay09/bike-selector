@@ -33,7 +33,9 @@ function downhillClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/downhill-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/downhill-option.jpg");
+  newImage.setAttribute("alt", "downhill bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   downhill.appendChild(newImage);
 }
 downhill.addEventListener("click", downhillClick);
@@ -59,7 +61,9 @@ function enduroClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/enduro-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/enduro-option.jpg");
+  newImage.setAttribute("alt", "enduro bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   enduro.appendChild(newImage);
 }
 enduro.addEventListener("click", enduroClick);
@@ -85,7 +89,9 @@ function crossCountryClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/crosscountry-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/crosscountry-option.jpg");
+  newImage.setAttribute("alt", "cross country bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   crossCountry.appendChild(newImage);
 }
 crossCountry.addEventListener("click", crossCountryClick);

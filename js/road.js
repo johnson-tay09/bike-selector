@@ -32,7 +32,9 @@ function raceClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/race-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/race-option.jpg");
+  newImage.setAttribute("alt", "race bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   race.appendChild(newImage);
 }
 race.addEventListener("click", raceClick);
@@ -57,7 +59,9 @@ function touringClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/touring-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/touring-option.jpg");
+  newImage.setAttribute("alt", "touring bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   touring.appendChild(newImage);
 }
 touring.addEventListener("click", touringClick);
@@ -82,7 +86,9 @@ function gravelClick(event) {
   //create replacement image
   var newImage = document.createElement("img");
   newImage.setAttribute("src", "../img/bike-option/gravel-option.jpg");
-  newImage.setAttribute("alt", "../img/bike-option/gravel-option.jpg");
+  newImage.setAttribute("alt", "gravel bike");
+  newImage.setAttribute("width", "400px");
+  newImage.setAttribute("height", "300px");
   gravel.appendChild(newImage);
 }
 gravel.addEventListener("click", gravelClick);
