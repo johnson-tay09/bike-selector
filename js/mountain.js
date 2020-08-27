@@ -41,6 +41,7 @@ downhill.addEventListener("click", downhillClick);
 function enduroClick(event) {
   event.preventDefault();
   yourBike.option = "enduroSIL.jpg";
+  yourBike.title = "All-Mountain Bike";
   yourBike.description =
     "All-mountain bikes also known as trail bikes, are the workhorse category of mountain bikes. An all-mountain bike is designed to handle almost everything a mountain biker will run into on a full day of riding, including steep ascents, rough descents and all the unexpected discoveries that make mountain biking so great.";
   var stringBike = JSON.stringify(yourBike);
@@ -66,6 +67,7 @@ enduro.addEventListener("click", enduroClick);
 function crossCountryClick(event) {
   event.preventDefault();
   yourBike.option = "xcmtbSIL.jpg";
+  yourBike.title = "Cross Country Bike";
   yourBike.description =
     "Cross-country bikes are designed for riders who want to ride all day and cover vast distances. XC courses and trails consist of a mix of rough forest paths, single track, smooth fire roads, and even paved paths connecting other trails. ";
   var stringBike = JSON.stringify(yourBike);
