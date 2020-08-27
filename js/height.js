@@ -23,6 +23,15 @@ function smallClick(event) {
   linkElement.setAttribute("href", "../pages/budget.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("smallOption");
+  //delete child image
+  sizeSmall.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/height-budget/small-size.jpg");
+  newImage.setAttribute("alt", "small size");
+  sizeSmall.appendChild(newImage);
 }
 
 function mediumClick(event) {
@@ -36,6 +45,15 @@ function mediumClick(event) {
   linkElement.setAttribute("href", "../pages/budget.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("mediumOption");
+  //delete child image
+  sizeMedium.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/height-budget/medium-size.jpg");
+  newImage.setAttribute("alt", "medium size");
+  sizeMedium.appendChild(newImage);
 }
 
 function largeClick(event) {
@@ -48,6 +66,15 @@ function largeClick(event) {
   linkElement.setAttribute("href", "../pages/budget.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  //remove img and replace with selected version of image
+  var imageElement = document.getElementById("largeOption");
+  //delete child image
+  sizeLarge.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/height-budget/large-size.jpg");
+  newImage.setAttribute("alt", "large size");
+  sizeLarge.appendChild(newImage);
 }
 
 getStoredBike();

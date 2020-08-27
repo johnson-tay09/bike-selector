@@ -15,7 +15,8 @@ function getStoredBike() {
 function raceClick(event) {
   event.preventDefault();
   yourBike.option = "roadRace.jpg";
-  yourBike.description = "race option lorem ipsum ";
+  yourBike.description =
+    "A performance race bike is designed for competitive road cycling, a sport governed by and according to the rules of the Union Cyclists Internationale (UCI). The front and back wheels are close together so the bicycle has quick handling. The Frame, forks and other assorted parts are typically made ot be aerodynamic adding to the overall speed of travel. ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
@@ -24,13 +25,22 @@ function raceClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  var imageElement = document.getElementById("roadRace");
+  //delete child image
+  race.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/race-option.jpg");
+  newImage.setAttribute("alt", "../img/bike-option/race-option.jpg");
+  race.appendChild(newImage);
 }
 race.addEventListener("click", raceClick);
 
 function touringClick(event) {
   event.preventDefault();
   yourBike.option = "roadTouring.jpg";
-  yourBike.description = "touring option lorem ipsum ";
+  yourBike.description =
+    "Designed for comfort on long rides, these bikes are sufficiently robust, ergonomic and capable of carrying heavy loads. Special features may include a long wheelbase (for ride comfort and to avoid pedal-to-luggage conflicts),frame materials that favor flexibility over rigidity (for ride comfort),heavy duty wheels (for load capacity), and multiple mounting points (for luggage rack,fenders, and bottle holders). ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
@@ -39,13 +49,22 @@ function touringClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  var imageElement = document.getElementById("roadTouring");
+  //delete child image
+  touring.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/touring-option.jpg");
+  newImage.setAttribute("alt", "../img/bike-option/touring-option.jpg");
+  touring.appendChild(newImage);
 }
 touring.addEventListener("click", touringClick);
 
 function gravelClick(event) {
   event.preventDefault();
   yourBike.option = "roadGravel.jpg";
-  yourBike.description = "gravel option lorem ipsum ";
+  yourBike.description =
+    "Drop-bar bikes with clearance for multiple tire sizes for a range of on/off road riding. Styles include gravel, bike-packing, and cyclocross. These are the most rugged road bikes on the market. ";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
@@ -54,6 +73,14 @@ function gravelClick(event) {
   linkElement.setAttribute("href", "../pages/height.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+  var imageElement = document.getElementById("roadGravel");
+  //delete child image
+  gravel.removeChild(imageElement);
+  //create replacement image
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src", "../img/bike-option/gravel-option.jpg");
+  newImage.setAttribute("alt", "../img/bike-option/gravel-option.jpg");
+  gravel.appendChild(newImage);
 }
 gravel.addEventListener("click", gravelClick);
 
