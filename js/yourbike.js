@@ -23,6 +23,10 @@ function renderImage() {
   yourImage.appendChild(imageElement);
 }
 function renderContent() {
+  var goalElement = document.createElement("p");
+  //set the attributes of the image
+  goalElement.textContent = `${yourBike.name}, this bike will work perfectly for helping you achieve ${yourBike.goal}.`;
+
   var sizeElement = document.createElement("p");
   //set the attributes of the image
   sizeElement.textContent = `We recommend a size ${yourBike.size} based on your height.`;
@@ -36,6 +40,7 @@ function renderContent() {
   trimElement.textContent = yourBike.trim;
 
   //append to parent
+  yourContent.appendChild(goalElement);
   yourContent.appendChild(sizeElement);
   yourContent.appendChild(descriptionElement);
   yourContent.appendChild(trimElement);

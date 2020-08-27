@@ -8,6 +8,7 @@ var mountain = document.getElementById("mountain");
 var road = document.getElementById("road");
 var comfort = document.getElementById("comfort");
 var link = document.getElementById("link");
+var nameForm = document.getElementById("nameForm");
 // array to store bike objects
 var bikeArray = [];
 //bike object
@@ -16,15 +17,18 @@ var yourBike = {};
 function mountainClick(event) {
   event.preventDefault();
   yourBike.terrain = "mountain";
+
   var stringBike = JSON.stringify(yourBike);
   //store products in products label
-  localStorage.clear();
+  // localStorage.clear();
   localStorage.setItem("bike", stringBike);
+
   var linkElement = document.createElement("a");
   linkElement.setAttribute("class", "nextLink");
   linkElement.setAttribute("href", "pages/mountain.html");
   linkElement.textContent = "Next";
   link.appendChild(linkElement);
+
   //remove img and replace with selected version of image
   var imageElement = document.getElementById("homeMountain");
   //delete child image
@@ -45,7 +49,7 @@ function roadClick(event) {
   yourBike.terrain = "road";
   var stringBike = JSON.stringify(yourBike);
   //store products in products label
-  localStorage.clear();
+  // localStorage.clear();
   localStorage.setItem("bike", stringBike);
   var linkElement = document.createElement("a");
   linkElement.setAttribute("class", "nextLink");
@@ -71,7 +75,7 @@ function comfortClick(event) {
   yourBike.terrain = "comfort";
   var stringBike = JSON.stringify(yourBike);
   //store products in products label
-  localStorage.clear();
+  // localStorage.clear();
   localStorage.setItem("bike", stringBike);
   var linkElement = document.createElement("a");
   linkElement.setAttribute("class", "nextLink");
@@ -92,3 +96,16 @@ function comfortClick(event) {
 }
 // wait for a click then run the callback function
 comfort.addEventListener("click", comfortClick);
+
+function formSubmit(event) {
+  event.preventDefault();
+  localStorage.clear();
+  //take in form data and set it as new params in bike object
+  var userName = event.target.userName.value;
+  console.log("this is the username", userName);
+  yourBike.name = userName;
+  var userGoal = event.target.userGoal.value;
+  console.log("this is the usergoal", userGoal);
+  yourBike.goal = userGoal;
+}
+nameForm.addEventListener("submit", formSubmit);
