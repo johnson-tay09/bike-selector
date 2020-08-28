@@ -2,10 +2,10 @@
 
 ## Authors
 
-- Brock-Lee Thomas
+- Lee Thomas
 - Rolando Haynes
 - Dominique Augurson
-- Major "Spencer" Lazzar
+- Spencer Lazzar
 - Taylor Johnson
 
 ## Description
@@ -61,17 +61,20 @@ Last update to readme. Fixed missing images for domain diagrams.
 ## WireFrame
 
 ### Test Page
+
 ![Test](img/Wireframe-Test.PNG)
 <br>
 
 ### Results Page
+
 ![Results](img/Wireframe-Results.PNG)
 <br>
 
 ### Data Page
+
 ![Data](img/Wireframe-Data.PNG)
 <br>
 
 ### About Us Page
-![About Us](img/Wireframe-AboutUs.PNG)
 
+![About Us](img/Wireframe-AboutUs.PNG)
