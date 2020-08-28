@@ -2,10 +2,10 @@
 
 ## Authors
 
-- Brock-Lee Thomas
+- Lee Thomas
 - Rolando Haynes
 - Dominique Augurson
-- Major "Spencer" Lazzar
+- Spencer Lazzar
 - Taylor Johnson
 
 ## Description
@@ -18,52 +18,63 @@ Our app will provide users with a tiered interactive menu that will reducibly le
 It will ask first for their intended terrain (road, mountain, park). Next it will refine that selection into sub-categories to land on the specialized bike configuration for their intended riding. The app will have a form for the user to input their height and inseam measurement. This information will be stored in local memory and run through script to produce the proper frame size for the user. The app will also have a drop down menu with a range of budgets to select from. Based on the combination of forms and selections, the final bike presentation page will display to the user what specific bike type is right for them, what size of frame and what kind of options to expect their budget.
 
 ## Work Cited
+
+We used a google font from [GoogleFonts](https://fonts.google.com/)
 We got our js delay from [stackoverflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript)
 
 ## Version Log
 
 ### 1.0.0
 
-Project start. Basic layout and file organization. Creation of repo and branch structure. 
+Project start. Basic layout and file organization. Creation of repo and branch structure.
 
-Your project should be documented on GitHub and within your code base.
+### 1.1.0
 
-On GitHub, create a README.md file as the main landing document of your repository. Continue to update it as your project evolves.
+In development. Still working out the JS code functionality. CSS has been roughly established. Added requirements. Added user stories. Enhanced README with domain modeling and wire-frame.
 
-At a minimum, your README.md should include the following:
+### 1.2.0
 
-The name of the project
-Names of the team members
-A description of the project
-The overall problem domain and how the project solves those problems
-Semantic versioning, beginning with version 1.0.0 and incremented as changes are made
-A list of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
-Within your code, document with meaningful comments. For example, a comment might provide an overview of what the function beneath it is doing, or describe the relationship between two variables.
+In development. First big merge of JS and CSS work. Lots of merge conflicts. Eventually reworked our CSS to agree with the JS more easily. Implemented flex box to position elements as desired.
 
-Comments should be updated as necessary. Remove all unused, commented-out code before committing to GitHub.
+### 1.3.0
+
+Added pseudo selector functionality to javascript. User can now select an image that corresponds the desired option and see image change colors.
+
+### 1.4.0
+
+Finished JS logic to build bike objects and store them in local storage. Your bike page displays dynamic content based on user selections.
+
+### 2.0.0
+
+Improved readability of fonts. Many finishing touches to CSS. Fixed any file path issues for rendering images.
+
+### 2.0.1
+
+Last update to readme. Fixed missing images for domain diagrams.
 
 ## Domain Modeling
 
 ### Domain Diagram
+
 ![Domain](img/domain.png)
 
 ## WireFrame
 
-### Landing Page
-![Landing Page](img/LandingPage.PNG)
-<br>
-
 ### Test Page
-![Test](img/Test.PNG)
+
+![Test](img/Wireframe-Test.PNG)
 <br>
 
 ### Results Page
-![Results](img/Results.PNG)
+
+![Results](img/Wireframe-Results.PNG)
 <br>
 
 ### Data Page
-![Data](img/Data.PNG)
+
+![Data](img/Wireframe-Data.PNG)
 <br>
 
 ### About Us Page
-![About Us](img/AboutUs.PNG)
+
+![About Us](img/Wireframe-AboutUs.PNG)

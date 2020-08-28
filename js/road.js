@@ -68,7 +68,7 @@ touring.addEventListener("click", touringClick);
 
 function gravelClick(event) {
   event.preventDefault();
-  yourBike.option = "roadGravelSIL.jpg";
+  yourBike.option = "gravelbikeSIL.jpg";
   yourBike.title = "Gravel Bike";
   yourBike.description =
     "Drop-bar bikes with clearance for multiple tire sizes for a range of on/off road riding. Styles include gravel, bike-packing, and cyclocross. These are the most rugged road bikes on the market. ";
