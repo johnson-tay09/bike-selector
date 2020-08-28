@@ -18,6 +18,8 @@ function renderImage() {
   //set the attributes of the image
   imageElement.setAttribute("src", `../img/bikes/${yourBike.option}`);
   imageElement.setAttribute("alt", yourBike.option);
+  imageElement.setAttribute("height", 450);
+  imageElement.setAttribute("width", 600);
   //append to parent
   yourImage.appendChild(imageTitle);
   yourImage.appendChild(imageElement);
