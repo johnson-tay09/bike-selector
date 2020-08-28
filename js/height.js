@@ -57,6 +57,7 @@ function mediumClick(event) {
 
 function largeClick(event) {
   event.preventDefault();
+  yourBike.size = "Large";
   var stringBike = JSON.stringify(yourBike);
   localStorage.clear();
   localStorage.setItem("bike", stringBike);
