@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <title>Mountain Bikes</title>
-    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> -->
-  </head>
-  <body>
-    <div id="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road</title>
+  <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="../css/style2.css" rel="stylesheet" type="text/css" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+  rel="stylesheet"
+/>
+</head>
 
-    <header>
+<body>
+  <div class="container">
+    <div class="header">
       <h1>The Bike Selector</h1>
-      <nav><a href="index.html">Home</a> | <a href="data.html">Data</a> |</nav>
-    </header>
-    <main>
-      <h2> Please select a category of mountain bike!</h2>
-
-      <section id="race">
-        <img src="../img/bikes/roadRace.jpg" alt="race bike"/>
-      </section>
-      <section id="touring">
-        <img src="../img/bikes/roadTouring.jpg" alt="touring bike"/>
-      </section>
-      <section id="gravel">
-        <img src="../img/bikes/roadGravel.jpg" alt="gravel bike"/>
-      </section>
-      <section id="link"></section> 
-      <!-- <h2><a href="height.html" id="gravel">Next</a></h2> -->
-
-  
-
-    </main>
-    <footer></footer>
-    <script src="../js/road.js"></script>
-  </div>
+    </div>
+    <div class="topnav">
+      <ul>
+        <li><button><a href="../index.html">Home</a></button></li>
+        <li><button><a href="data.html">Data</a></button></li>
+        <li><button><a href="aboutus.html">About Us</a></button></li>
+        <li><button><a href="yourbike.html">Your Bike</a></button></li>
+      </ul>
+    </div>
+    <div class="pictures">
+      <div id="race">
+        <h2>Need for Speed</h2>
+        <img id="roadRace" class="imageHomePage" src="../img/bike-option/bnwrace-option.jpg" alt="">
+      </div>
+      <div id="touring">
+        <h2>Long Adventures</h2>
+        <img id="roadTouring" class="imageHomePage" src="../img/bike-option/bnwtouring-option.jpg" alt="">
+      </div>
+      <div id="gravel">
+        <h2>Off The Pavement</h2>
+        <img id="roadGravel" class="imageHomePage" src="../img/bike-option/bnwgravel-option.jpg" alt="">
+      </div>
+    </div>
+      <section id="link"></section>
+      <footer></footer>
+      <script src="../js/road.js"></script>
+    
 </body>
 
 </html>
