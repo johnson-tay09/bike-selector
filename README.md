@@ -49,21 +49,17 @@ Comments should be updated as necessary. Remove all unused, commented-out code b
 
 ## WireFrame
 
-### Landing Page
-![Landing Page](img/LandingPage.PNG)
-<br>
-
 ### Test Page
-![Test](img/Test.PNG)
+![Test](img/Wireframe-Test.PNG)
 <br>
 
 ### Results Page
-![Results](img/Results.PNG)
+![Results](img/Wireframe-Results.PNG)
 <br>
 
 ### Data Page
-![Data](img/Data.PNG)
+![Data](img/Wireframe-Data.PNG)
 <br>
 
 ### About Us Page
-![About Us](img/AboutUs.PNG)
+![About Us](img/Wireframe-AboutUs.PNG)
