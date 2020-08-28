@@ -1,7 +1,7 @@
 .container {
   background-color: #3b3e09;
   border: 1px solid black;
-  height: 1000px;
+  height: 2000px;
 }
 .header {
   font-family: "Luckiest Guy";
@@ -10,7 +10,7 @@
   text-align: center;
   padding: 10px;
   font-size: 35px;
-  color: #326ba0;
+  color: white;
 }
 h1 {
   font-family: "Luckiest Guy";
@@ -186,15 +186,15 @@ h2 {
   margin-bottom: 40%;
 }
 
-#nameForm{
+#nameForm {
   width: 100%;
   padding: 12px 20px;
   color: white;
   margin-top: 10px;
   text-align: center;
 }
-#name{
-  background-color:  #326ba0; 
+#name {
+  background-color: #326ba0;
   width: 200px;
   height: 25px;
   border-radius: 5px;
@@ -203,8 +203,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-#goal{
-  background-color:  #326ba0;;
+#goal {
+  background-color: #326ba0;
   width: 200px;
   height: 25px;
   border-radius: 5px;
@@ -212,7 +212,7 @@ h2 {
   font-size: 16px;
 }
 
-#submitButton{
+#submitButton {
   margin-top: 10px;
   width: 100px;
   height: 25px;
@@ -228,18 +228,19 @@ h2 {
   background-color: white;
 }
 h2 {
-  color: rgba(16, 28, 155, 0.927);
+  color: White;
   padding: 5px;
   font-size: x-large;
 }
 p {
   font-size: x-large;
-  background-color: rgba(98, 98, 237, 0.475);
+  background-color: #326ba0fb;
   margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
   margin-left: 20%;
   margin-right: 20%;
+  color: white;
 }
 a:visited {
   color: rgb(0, 0, 0);
